@@ -11,7 +11,6 @@ It comes with **bower**, **npm**, **gulp**, **AngularJS**, **jQuery**, **Require
 **MongoDB** as database.
 
 ###Main tools:
-**setup.js** - prepare workspace to a new project.
 **gulpfile.js** - set of various tasks.
 **server.js** - static server.
 **app.js** - main module from angularJS.
@@ -19,7 +18,7 @@ It comes with **bower**, **npm**, **gulp**, **AngularJS**, **jQuery**, **Require
 
 ##Main command:
 ```bash
-$ node setup.js
+$ rm -rf .git && npm init && bower init && git init && npm install && bower install
 ```
 
 It will remove .git folder, run npm and bower init, install it's dependencies, then will initialize new git repository.
@@ -70,7 +69,6 @@ frontend-setup/
 |__main.js
 |__package.json
 |__server.js
-|__setup.js
 |__assets/
 |____css/
 |____img/
