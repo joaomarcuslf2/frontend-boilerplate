@@ -1,0 +1,24 @@
+{
+  "name": "frontend-setup",
+  "description": "",
+  "main": "main.js",
+  "authors": [
+    "João Marcus Fernandes <jmarcusfernandes@gmail.com>"
+  ],
+  "license": "ISC",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "lib"
+  ],
+  "dependencies": {
+    "jquery": "1.9",
+    "angular": "1.5.7",
+    "bootstrap": "3.3.6",
+    "requirejs": "2.2.0"
+  },
+  "homepage": ""
+}
