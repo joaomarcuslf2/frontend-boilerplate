@@ -20,6 +20,7 @@ It comes with **bower**, **npm**, **gulp**, **AngularJS**, **jQuery**, **Node.js
 ##Main command:
 ```bash
 $ rm -rf .git && npm init && bower init && git init && npm install && bower install
+#It will remove .git folder, run npm and bower init, install it's dependencies, then will initialize new git repository.
 ```
 
 ###Default configuration:
@@ -28,11 +29,9 @@ $ rm -rf .git && npm init && bower init && git init && npm install && bower inst
 **MongoDB** as database.
 
 ###Main tools:
-**gulpfile.js** - set of various tasks.
-**server.js** - static server.
-**app.js** - main module from angularJS.
-
-It will remove .git folder, run npm and bower init, install it's dependencies, then will initialize new git repository.
+- **gulpfile.js** - set of various tasks.
+- **server.js** - static server.
+- **app.js** - main module from angularJS.
 
 ##Gulp tasks:
 - **default** - Lint js files on root-folder.
