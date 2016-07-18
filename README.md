@@ -125,6 +125,7 @@ Some tools to speed up project workflow
 
 - Resolve RequireJS and AngularJS modules error
 - Add Express and MEAN Stack
-- Add mocha as test runner
+- Add [mocha.js](https://mochajs.org/) as test runner
+  - It would be good to integrate it with [zombie.js](http://zombie.js.org/) and [vorlon.js](http://www.vorlonjs.com/)
 
 by *João Marcus de Lemos Fernandes*
