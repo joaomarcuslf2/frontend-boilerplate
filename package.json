@@ -4,7 +4,7 @@
   "main": "main.js",
   "scripts": {
     "test": "gulp lint:all",
-    "start": "node server.js"
+    "start": "nodemon server.js"
   },
   "author": "João Marcus Fernandes <jmarcusfernandes@gmail.com>",
   "license": "ISC",
@@ -21,6 +21,7 @@
     "gulp-jshint": "2.x.x",
     "gulp-jslint": "1.x.x",
     "gulp-multi-process": "0.x.x",
+    "gulp-rename": "1.x.x",
     "gulp-sass": "2.x.x",
     "gulp-scss-lint": "0.x.x",
     "gulp-sourcemaps": "1.x.x",
@@ -33,6 +34,8 @@
   },
   "dependencies": {
     "finalhandler": "^0.5.0",
+    "generator-angular": "^0.15.1",
+    "nodemon": "^1.9.2",
     "serve-static": "^1.11.1"
   },
   "description": ""

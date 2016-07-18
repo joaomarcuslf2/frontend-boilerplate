@@ -5,6 +5,7 @@ var concat = require('gulp-concat');
 var todo = require('gulp-todo');
 var clean = require('gulp-clean');
 var gulpMultiProcess = require('gulp-multi-process');
+var rename = require("gulp-rename");
 var exec = require('child_process').exec;
 var clean = function(paths, opt) {
     var flag = '';
@@ -40,7 +41,7 @@ gulp.task('default', function () {
 
 gulp.task('todo', function () {
     console.log("Running TODO task");
-    gulp.src("./assets/js/*.js")
+    gulp.src("./assets/js/*/*.js")
         .pipe(todo())
         .pipe(gulp.dest('./assets/md'));
 });
@@ -61,6 +62,14 @@ gulp.task('build', function (callback) {
     console.log("Running BUILD task");
     return runSequence('lint:all', ['default', 'build:all', 'clean'], callback);
 });
+
+gulp.task('lint:app', function () {
+    console.log("Linting JavaScript");
+    return gulp.src(["./app/*.js", "./app/*/*.js"])
+        .pipe(jslint())
+        .pipe(jshint.reporter('default'));
+});
+
 
 gulp.task('node:server', function () {
     console.log("Initializing Node server");
@@ -115,7 +124,7 @@ gulp.task('watch:js', function () {
 
 gulp.task('lint:js', function () {
     console.log("Linting JavaScript");
-    return gulp.src("./assets/js/*.js")
+    return gulp.src("./assets/js/*/*.js")
         .pipe(jslint())
         .pipe(jshint.reporter('default'));
 });
@@ -127,14 +136,14 @@ gulp.task('concat:js', function (callback) {
 
 gulp.task('concat:normal:js', function () {
     console.log("Concatenating to non-minified js");
-    return gulp.src('./assets/js/*.js')
+    return gulp.src("./assets/js/*/*.js")
         .pipe(concat('custom.js'))
         .pipe(gulp.dest('./lib/custom/'));
 });
 
 gulp.task('concat:min:js', function () {
     console.log("Concatenating to minified js");
-    return gulp.src('./assets/js/*.js')
+    return gulp.src("./assets/js/*/*.js")
         .pipe(concat('custom.min.js'))
         .pipe(uglify())
         .pipe(gulp.dest('./lib/custom/'));
@@ -182,7 +191,8 @@ gulp.task('minify:css', function () {
             console.log(details.name + ': ' + details.stats.minifiedSize);
         }))
         .pipe(sourcemaps.write())
-        .pipe(gulp.dest("./lib/custom/custom.min.css"));
+        .pipe(rename('custom.min.css'))
+        .pipe(gulp.dest("./lib/custom/"));
 });
 
 // Sass
@@ -214,7 +224,8 @@ gulp.task('compile:custom:scss', function () {
     console.log("Compiling custom SCSS file");
     return sass('./assets/sass/style.scss')
         .on('error', sass.logError)
-        .pipe(gulp.dest('lib/custom/custom.css'));
+        .pipe(rename('custom.css'))
+        .pipe(gulp.dest('lib/custom/'));
 });
 
 // IMG
