@@ -2,10 +2,10 @@
 
 ##Contents:
   1. [Explanation](#explanation)
-  	- [Main command](#main-command)
-  	- [Default configuration](#default-configuration)
-  	- [Main tools](#main-tools)
-  	- [Gulp tasks](#gulp-tasks)
+    - [Main command](#main-command)
+    - [Default configuration](#default-configuration)
+    - [Main tools](#main-tools)
+    - [Gulp tasks](#gulp-tasks)
   2. [File tree](#file-tree)
   3. [Useful resources](#useful-resources)
   4. [TODO](#todo)
@@ -35,37 +35,37 @@ $ rm -rf .git && npm init && bower init && git init && npm install && bower inst
 It will remove .git folder, run npm and bower init, install it's dependencies, then will initialize new git repository.
 
 ##Gulp tasks:
-**default** - Lint js files on root-folder.
-**todo** - Get all todo comments on js files and save it on markdown folder.
-**clean** - Clean unused folders.
-**install** - Install npm and bower compnents.
-**build** - Prepare system for deploy.
-**node:server** - Run node server.
-**mongod:server** - Run mongod server.
-**start:servers** - Start both servers.
-**lint:all** - Lint all assets file.
-**build:all** - Run main assets tasks.
-**watch:all** - Watch assets modifications.
-**watch:multi** - Watch assets modifications with multi process.
-**js** - Run main javascripts tasks.
-**watch:js** - Watch javascripts modifications.
-**lint:js** - Lint javascripts files.
-**concat:js** - Concat javascripts files.
-**concat:normal:js** - Concat javascripts files into non-minified file.
-**concat:min:js** - Concat javascripts files into minified file.
-**css** - Run main css tasks.
-**watch:css** - Watch css modifications.
-**lint:css** - Lint css files.
-**beautify:css** - Beautify custom css file.
-**minify:css** - Minify custom css file.
-**scss** - Run main scss tasks.
-**watch:scss** - Watch scss modifications.
-**lint:scss** - Lint scss files.
-**compile:scss** - Compile scss files.
-**compile:custom:scss** - Compile custom scss file.
-**img** - Run main img tasks.
-**watch:img** - Watch img modifications.
-**minify:img** - Minify img assets.
+- **default** - Lint js files on root-folder.
+- **todo** - Get all todo comments on js files and save it on markdown folder.
+- **clean** - Clean unused folders.
+- **install** - Install npm and bower compnents.
+- **build** - Prepare system for deploy.
+- **node:server** - Run node server.
+- **mongod:server** - Run mongod server.
+- **start:servers** - Start both servers.
+- **lint:all** - Lint all assets file.
+- **build:all** - Run main assets tasks.
+- **watch:all** - Watch assets modifications.
+- **watch:multi** - Watch assets modifications with multi process.
+- **js** - Run main javascripts tasks.
+- **watch:js** - Watch javascripts modifications.
+- **lint:js** - Lint javascripts files.
+- **concat:js** - Concat javascripts files.
+- **concat:normal:js** - Concat javascripts files into non-minified file.
+- **concat:min:js** - Concat javascripts files into minified file.
+- **css** - Run main css tasks.
+- **watch:css** - Watch css modifications.
+- **lint:css** - Lint css files.
+- **beautify:css** - Beautify custom css file.
+- **minify:css** - Minify custom css file.
+- **scss** - Run main scss tasks.
+- **watch:scss** - Watch scss modifications.
+- **lint:scss** - Lint scss files.
+- **compile:scss** - Compile scss files.
+- **compile:custom:scss** - Compile custom scss file.
+- **img** - Run main img tasks.
+- **watch:img** - Watch img modifications.
+- **minify:img** - Minify img assets.
 
 ##File tree:
 ```bash
@@ -115,12 +115,12 @@ frontend-boilerplate/
 Some tools to speed up project workflow
 
 - **[Yeoman](https://github.com/yeoman/yo)**
-	- [Generator AngularJS](https://github.com/yeoman/generator-angular)
-	- [Generator jQuery](https://github.com/yeoman/generator-jquery)
-	- [Generator Node.js](https://github.com/yeoman/generator-node)
-	- [Generator Mocha](https://github.com/yeoman/generator-mocha)
+  - [Generator AngularJS](https://github.com/yeoman/generator-angular)
+  - [Generator jQuery](https://github.com/yeoman/generator-jquery)
+  - [Generator Node.js](https://github.com/yeoman/generator-node)
+  - [Generator Mocha](https://github.com/yeoman/generator-mocha)
 - **[MEAN.js](https://github.com/meanjs/mean)**
-	- [Generator MEAN](https://github.com/meanjs/generator-meanjs)
+  - [Generator MEAN](https://github.com/meanjs/generator-meanjs)
 
 ##TODO:
 
