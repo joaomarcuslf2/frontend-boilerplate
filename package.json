@@ -4,7 +4,8 @@
   "main": "main.js",
   "scripts": {
     "test": "gulp lint:all",
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "main": "rm -rf .git && npm init && bower init && git init && npm install && bower install"
   },
   "author": "João Marcus Fernandes <jmarcusfernandes@gmail.com>",
   "license": "ISC",
