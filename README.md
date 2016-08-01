@@ -8,7 +8,8 @@
     - [Gulp tasks](#gulp-tasks)
   2. [File tree](#file-tree)
   3. [Useful resources](#useful-resources)
-  4. [TODO](#todo)
+  4. [Depencencies](#depencencies)
+  5. [TODO](#todo)
 
   
 
@@ -19,7 +20,7 @@ It comes with **bower**, **npm**, **gulp**, **AngularJS**, **jQuery**, **Node.js
 
 ##Main command:
 ```bash
-$ rm -rf .git && npm init && bower init && git init && npm install && bower install
+$ npm run main
 #It will remove .git folder, run npm and bower init, install it's dependencies, then will initialize new git repository.
 ```
 
@@ -120,6 +121,13 @@ Some tools to speed up project workflow
   - [Generator Mocha](https://github.com/yeoman/generator-mocha)
 - **[MEAN.js](https://github.com/meanjs/mean)**
   - [Generator MEAN](https://github.com/meanjs/generator-meanjs)
+
+##Depencencies:
+
+- [Node.js](https://nodejs.org/en/)
+- [Git](https://git-scm.com/)
+- [Sass](http://sass-lang.com/install)
+- [MongoDB](https://www.mongodb.com/)
 
 ##TODO:
 
