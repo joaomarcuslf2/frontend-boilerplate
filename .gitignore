@@ -1,4 +1,8 @@
-/node_modules/
-/bower_components/
-/tests/
-/.sass-cache/
+/node_modules
+/build
+/fonts
+/logs
+/.sass-cache
+/.gulp-scss-cache
+npm-debug.log
+deploy
