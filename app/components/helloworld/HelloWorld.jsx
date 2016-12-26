@@ -25,7 +25,7 @@ export default class HelloWorld extends React.Component {
                 Check the project page on <a href='https://github.com/joaomarcuslf/frontend-boilerplate'>Github</a>,
                 <br />
                 Also check the <a href='https://github.com/joaomarcuslf/frontend-boilerplate/blob/master/README.md'>
-                README.md</a> for the complet explanation of how to start this.
+                README.md</a> for the complete explanation of how to start this.
               </p>
             </div>
           </div>
